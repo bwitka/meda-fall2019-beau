@@ -138,10 +138,6 @@
 
       /**** CUSTOM CSS ****/
 
-      body {
-        background: linear-gradient(#fff, #999);
-      }
-
       header {
         background-color: #99ccff;
       }
@@ -164,15 +160,26 @@
         border-radius: 20% 5%;
         /* offset-x | offset-y | blur-radius | color */
         box-shadow: 10px 5px 5px #999;
-        /* position: absolute; */
+        position: sticky;
+        bottom: 100px;
+        left: 400px;
       }
 
       footer {
         background-color: #cc6699;
       }
 
+      body {
+        background: linear-gradient(#fff, #999);
+        font-size: 100px;
+      }
+
       h1 {
-        font-size: 3em;
+        font-size: 48px;
+      }
+
+      p {
+        font-size: 12px;
       }
     </style>
   </head>
