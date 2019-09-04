@@ -157,7 +157,7 @@
 
       body {
         background: linear-gradient(#fff, #999);
-        font-size: 100px;
+        font-size: 48px;
         text-align: center;
       }
 
@@ -192,6 +192,20 @@
       .even_p {
         font-weight: bold;
       }
+
+      .faded {
+        opacity: 0.5;
+      }
+
+      main h1 {
+        font-size: 40px;
+      }
+
+      p a:first-of-type {
+        text-decoration: none;
+        color: #ff6600;
+        font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
     </style>
   </head>
 
@@ -208,9 +222,10 @@
     </header>
 
     <main>
-      <h1>Beau Witka</h1>
+      <h1 class="faded">Beau Witka</h1>
       <p id="p1" class="odd_p">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        <a href="#">Laboriosam</a>
         eum, nostrum adipisci ducimus nemo ad minus quisquam quidem, dolorem
         unde blanditiis enim modi, tenetur porro? Explicabo, architecto
         distinctio. Explicabo, autem!
@@ -233,10 +248,11 @@
         unde blanditiis enim modi, tenetur porro? Explicabo, architecto
         distinctio. Explicabo, autem!
       </p>
-      <p><a href="#top">Back to top of page!</a></p>
+      <p class="faded"><a href="#top">Back to top of page!</a></p>
     </main>
 
     <footer>
+      <h1>Thanks for visiting! Come back again soon.</h1>
       <p>Copyright &copy;2019 Beau Witka</p>
     </footer>
   </body>
