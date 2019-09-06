@@ -1,0 +1,114 @@
+Beau Witka
+Project 1
+MEDA Web Design
+Fall 2019
+
+(Note: I plan to retain the majority of the design concepts for my website that I formulated during the Summer 2019 cohort. The changes will take place during the creation of the website, most notably with regard to layout, responsiveness, and other factors affected by CSS).
+
+
+WEBSITE COLOR SCHEME:
+=====================
+
+My plan is to keep my website as simple and minimalist as possible, including the color scheme. All text (headings, body text/paragraphs, link text, etc.) will be black or dark grey. The website background will consist of a steel grey image. Aside from this background image, all website images will be in color.
+
+Two color schemes I am considering are:
+
+#1.)
+E8E8E8
+A8A8A8
+878787
+6A6B6B
+4B4B4C
+
+#2.)
+f7f7f7 => text
+eeeeee => headers
+393e46 => link text on hover
+929aab => background
+
+
+
+I have chosen a simple color scheme because I want the images to stand out and don't want my website to look/feel too busy. 
+
+
+WEBSITE PAGE CONTENT:
+=====================
+
+
+HOME PAGE:
+----------
+Navigation/Header will include: my name (BEAU WITKA) and the following: HOME | ABOUT | PROJECTS | CONTACT
+Center of page will include: a site logo image.
+Footer will include: copyright info and social media icons (Twitter, GitHub, LinkedIn, etc.).
+
+
+ABOUT PAGE:
+-----------
+(Same header and footer content as Home page).
+
+(Short bio:)
+I have always been someone who has possessed a love to learn new skills and utilize my innate capacity for design and problem solving. This is what has brought me to where I am today, studying to be a full stack web developer and designer. Throughout my adulthood I have taught myself various skills from landscaping to auto body work to interior storage and organization. In college, I studied Spanish Language and Literature. 
+
+On my accompanying projects page, you will see firsthand the wide variety of projects I have undertaken over the years. An attention to detail and uncompromising work ethic have been a common thread throughout my work history and I look forward to someday employ the same qualities as a web developer and designer. I enjoy being challenged and learning new skills. This is part of what attracted me to the field of web design. My learning journey began just over four years ago and, even with the pitfalls and hurdles I have had to maneuver, it has never ceased to be a rewarding experience for me.
+
+
+
+PROJECTS PAGE:
+--------------
+(Same header and footer content as Home page).
+
+The only text on the Projects page will be the title ("Projects") as well as titles for each individual project image (note: each image will link to the individual project on a new page).
+
+Link to PDF version of my resume.
+
+CONTACT PAGE:
+-------------
+(Same header and footer content as Home page).
+
+I will attempt to create a simple contact form (name, email address, perhaps subject, and message). A "Submit" button will be placed below the form.
+
+
+EXAMPLE PORTFOLIO WEBSITE NOTES: (websites for three photographers I follow on Instagram)
+================================
+
+
+Example Website #1: https://sigismondiphotography.com/
+-------------------
+
+- what I like: I like the videos running in the background on the home page and the simplicity of the design.
+
+- what I dislike: there are a lot of areas on this website that appear to be broken - with text sitting on top of other text. I also feel that the drop down menus located under each of the navigation items are way too busy. It's almost overwhelming how many choices there are. Lastly, there isn't an obvious way to get back to the home page.
+
+- header: photographer's name, navigation, and social media/contact icons.
+
+- main: video.
+
+- footer: very small, and hard to see, copyright icon.
+
+
+Example Website #2: https://www.adambrettschnee.com/
+-------------------
+
+- what I like: rotating image gallery on landing page, side navigation on home page, large images that are viewable via scroll (versus smaller thumbnails in a gallery).
+
+- what I dislike: not sure I like the "c'mon in" link to enter the website from the landing page. I think the 'about + contact' page could have more content and I tend to like to see a photo of the person the website is representing.
+
+- header: site logo.
+
+- main: image gallery.
+
+- footer: social media icons.
+
+
+Example Website #3: http://www.reneechoiphotography.com/
+-------------------
+
+- what I like: simplicity of design (although it appears to be a Squarespace site), large images within each image gallery, limited number of galleries (not overwhelming).
+
+- what I dislike: logo isn't as crisp as the rest of the site, 'about' section doesn't include a profile photo of the artist, footer is somewhat sparse - and social media icons look lonely off in the righthand corner.
+
+- header: site logo and navigation.
+
+- main: image gallery.
+
+- footer: two social media icons.
