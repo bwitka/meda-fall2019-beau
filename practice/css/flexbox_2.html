@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>CSS Flexbox Practice #2</title>
+    <style>
+      #container-1 {
+        background-color: #690;
+        display: flex;
+        margin-bottom: 50px;
+      }
+
+      #item-1,
+      #item-2,
+      #item-3,
+      #item-4 {
+        background-color: #ffcc00;
+        height: 350px;
+        width: 50px;
+        margin: 10px;
+        flex-grow: 1;
+      }
+
+      #item-2 {
+        flex-grow: 12;
+      }
+
+      #container-2 {
+        display: flex;
+        background-color: #690;
+      }
+
+      #box-1,
+      #box-2,
+      #box-3 {
+        background-color: #ffcc00;
+        height: 350px;
+        width: 50px;
+        margin: 10px;
+        flex-grow: 1;
+      }
+
+      #box-1 {
+        flex-grow: 4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container-1">
+      <div id="item-1"></div>
+      <div id="item-2"></div>
+      <div id="item-3"></div>
+      <div id="item-4"></div>
+    </div>
+
+    <div id="container-2">
+      <div id="box-1"></div>
+      <div id="box-2"></div>
+      <div id="box-3"></div>
+    </div>
+  </body>
+</html>
