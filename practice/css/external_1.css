@@ -1,0 +1,49 @@
+/*********
+GLOBAL STYLES
+*********/
+
+body {
+  background: #e6e6e6;
+}
+
+#page_1 {
+  background: linear-gradient(#fc6, #fff);
+  height: 700px;
+}
+
+#page_2 {
+  background: linear-gradient(#fcf, #fff);
+  height: 700px;
+}
+
+/*********
+HEADER STYLES
+*********/
+
+header {
+  color: #666;
+}
+
+/*********
+MAIN STYLES
+*********/
+
+main {
+  color: #36c;
+}
+
+#special {
+  font-style: italic;
+}
+
+#page_2 p {
+  color: #f30;
+}
+
+/*********
+FOOTER STYLES
+*********/
+
+footer {
+  color: #393;
+}
