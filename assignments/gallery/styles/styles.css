@@ -32,7 +32,6 @@ header {
 /*** Main Styles ***/
 
 main {
-  height: 500px;
 }
 
 #main-gallery {
@@ -49,6 +48,19 @@ main {
   height: 300px;
   display: inline-block;
   margin: 10px auto;
+}
+
+#flexbox-gallery {
+  background: #fcc;
+  display: flex;
+  height: 300px;
+  margin: 10px;
+}
+
+#flexbox-gallery div {
+  border: 2px solid #000;
+  flex-grow: 1;
+  margin: 10px;
 }
 
 /*** Footer Styles ***/
