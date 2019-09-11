@@ -1,0 +1,58 @@
+/*** Global Styles ***/
+
+body {
+  background-image: url(../images/background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#container {
+  border: 2px solid #000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  border: 2px solid #000;
+  margin: 10px;
+}
+
+/*** Header Styles ***/
+
+header {
+  height: 200px;
+}
+
+/*** Main Styles ***/
+
+main {
+  height: 500px;
+}
+
+#main-gallery {
+  background: #d9d9d9;
+  height: 325px;
+  margin: 10px;
+  text-align: center;
+}
+
+#main-gallery div {
+  border: 2px solid #000;
+  background: #f2f2f2;
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  margin: 10px auto;
+}
+
+/*** Footer Styles ***/
+
+footer {
+  height: 100px;
+}
