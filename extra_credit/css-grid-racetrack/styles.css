@@ -1,0 +1,61 @@
+/* Global Styles */
+
+body {
+  background: #f0fff0;
+}
+/* Grid Container Styles */
+
+#container {
+  background: #9df;
+  border: 2px solid #999;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    ". . . box-1 box-1 box-1 box-1"
+    ". box-2 box-2 box-2 . . box-3"
+    ". box-4 . . box-5 box-5 box-3"
+    ". box-6 box-6 box-6 box-6 . ."
+    ". . . . . . .";
+}
+
+/* Grid Item Styles */
+
+#box-1,
+#box-2,
+#box-3,
+#box-4,
+#box-5,
+#box-6 {
+  background: #fff;
+}
+
+#box-1 {
+  grid-area: box-1;
+  border-radius: 75px 75px 0 0;
+}
+
+#box-2 {
+  grid-area: box-2;
+  border-radius: 75px 0 75px 0;
+}
+
+#box-3 {
+  grid-area: box-3;
+  border-radius: 0 0 75px 0;
+}
+
+#box-4 {
+  grid-area: box-4;
+}
+
+#box-5 {
+  grid-area: box-5;
+  border-radius: 75px 0 0 0;
+}
+
+#box-6 {
+  grid-area: box-6;
+  border-radius: 0 0 75px 75px;
+}
