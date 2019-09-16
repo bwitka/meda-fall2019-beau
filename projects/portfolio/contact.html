@@ -1,48 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <title>Beau's Portfolio</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="container">
-
-        <header>
-            <h1>Beau Witka</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div id="contact_me">
-                <h2>Contact Me:</h2>
-                <p><a href="mailto:bwitka@gmail.com" target="_blank">bwitka@gmail.com</a></p>
+      <header>
+        <h1>Beau Witka</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div id="contact_me">
+          <h2>Contact Me:</h2>
+          <form action="/my-handling-form-page" method="post">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user_name" />
             </div>
-        </main>
-        <footer>
-            <ul class="social-icons">
-                <li><a href="https://github.com/bwitka" target="_blank"><img src="images/github.png" alt="github icon"></a></li>
-                <li><a href="https://www.linkedin.com/in/beauwitka/" target="_blank"><img src="images/linkedin.png" alt="linkedin icon"></a></li>
-                <li><a href="https://mobile.twitter.com/beauwitka" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a></li>
-                <li><a href="https://www.instagram.com/bwitka/" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a></li>
-                <li><a href="https://open.spotify.com/user/bwitka?si=z8V-TREQSLiYkKXJB4DTdw" target="_blank"><img src="images/spotify.png" alt="spotify icon"></a></li>
-            </ul>
-            <p id="copyright">&copy; 2019 Beau Witka</p>
-        </footer>
 
+            <div>
+              <label for="mail">E-mail:</label>
+              <input type="email" id="mail" name="user_email" />
+            </div>
+
+            <div>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+
+            <div class="button">
+              <button type="submit">Send your message</button>
+            </div>
+          </form>
+          <div id="email_contact">
+            <p>
+              You can also email me at:
+              <a href="mailto: bwitka@gmail.com">bwitka@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/bwitka" target="_blank"
+              ><img src="images/github.png" alt="github icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/beauwitka/" target="_blank"
+              ><img src="images/linkedin.png" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://mobile.twitter.com/beauwitka" target="_blank"
+              ><img src="images/twitter.png" alt="twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/bwitka/" target="_blank"
+              ><img src="images/instagram.png" alt="instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/user/bwitka?si=z8V-TREQSLiYkKXJB4DTdw"
+              target="_blank"
+              ><img src="images/spotify.png" alt="spotify icon"
+            /></a>
+          </li>
+        </ul>
+        <p id="copyright">&copy; 2019 Beau Witka</p>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
