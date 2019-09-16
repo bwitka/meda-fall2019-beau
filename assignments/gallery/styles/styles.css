@@ -1,13 +1,24 @@
+/* Hex Color Pallete:
+  #2c3e50
+  #95a5a6
+  #bdc3c7
+  #ecf0f1
+*/
+
+/* Google Fonts:
+  font-family: 'Julee', cursive;
+  font-family: 'Open Sans', sans-serif;
+*/
+
 /********** Global Styles **********/
+
+@import url("https://fonts.googleapis.com/css?family=Julee|Open+Sans&display=swap");
 
 body {
   background-image: url(../images/background-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   height: 100vh;
 }
 
@@ -18,10 +29,74 @@ footer {
   display: grid;
 }
 
+header,
+footer,
+figcaption {
+  text-align: center;
+  color: #2c3e50;
+  font-family: "Julee", cursive;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 5vw);
+  grid-gap: 15px;
+}
+
+img {
+  border: 2px solid #95a5a6;
+  border-radius: 5px;
+}
+
 /********** Container Styles **********/
+
+#container {
+  height: 100vh;
+  grid-template-rows: 100px 1fr 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
 
 /********** Header Styles **********/
 
+header {
+  grid-area: header;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+}
+
 /********** Main Styles **********/
 
+main {
+  grid-area: main;
+}
+
 /********** Footer Styles **********/
+
+footer {
+  grid-area: footer;
+}
+
+/********** Index.html Styles **********/
+
+.home-img_1 {
+  grid-column: 2 / 4;
+  grid-row: 1 / 4;
+}
+
+.home-img_2 {
+  grid-column: 4 / 6;
+  grid-row: 1 / 4;
+}
+
+figcaption {
+  font-size: 1.6em;
+}
