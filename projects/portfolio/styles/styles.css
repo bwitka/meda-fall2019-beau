@@ -1,0 +1,181 @@
+/* BASE.HTML STYLES */
+
+body {
+  background-image: url(../images/background_image.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#container {
+  position: relative; /* Note: style applied to push footer down. */
+  min-height: 100vh;
+}
+
+header {
+  width: 700px;
+  margin: -20px auto 0;
+}
+
+main {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem; /* Footer height */
+}
+
+/* Note: added custom styling found online in order to make sure footer was pushed to bottom of page. */
+
+footer {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
+}
+
+/* TEXT STYLES */
+
+h1 {
+  font: bold 40px "Georgia", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+p,
+li,
+a {
+  font: 20px "Didot", serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}
+
+/* IMAGE STYLES */
+
+#logo_image {
+  margin: 30px auto 0;
+  display: block;
+  border: 5px solid #333;
+}
+
+.social-icons li img {
+  width: 20px;
+  height: 20px;
+}
+
+/* LINK STYLES */
+
+a:link {
+  color: #333;
+}
+
+a:visited {
+  color: #595959;
+}
+
+a:hover {
+  color: #000;
+}
+
+/***** ABOUT PAGE STYLES *****/
+
+#about_me h2 {
+  color: #595959;
+}
+
+#about_me img {
+  border: 2px solid #595959;
+  float: left;
+  margin: 0 35px -3px 0;
+}
+
+#about_me p {
+  color: #fff;
+}
+
+#resume {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0 auto 60px;
+}
+
+#resume a:link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#resume a:visited {
+  color: #fff;
+}
+
+#resume a:hover {
+  color: #000;
+}
+
+/***** PROJECTS PAGE STYLES *****/
+
+div.project_gallery {
+  margin: 120px 10px 0px;
+  float: left;
+  width: 150px;
+}
+
+div.project_gallery img {
+  border: 1px solid #ccc;
+  width: 100%;
+  height: auto;
+}
+
+div.project_gallery img:hover {
+  border: 1px solid #777;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+/***** CONTACT PAGE STYLES *****/
+
+#contact_me {
+  text-align: center;
+  border: 5px solid #595959;
+  margin: 175px auto 0;
+}
+
+#contact_me h2 {
+  color: #fff;
+}
+
+#contact_me a:link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#contact_me a:visited {
+  color: #595959;
+}
+
+#contact_me a:hover {
+  color: #000;
+}
