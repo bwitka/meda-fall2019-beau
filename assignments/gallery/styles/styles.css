@@ -30,30 +30,45 @@ footer {
 }
 
 header,
-footer,
-figcaption {
+main,
+figcaption,
+footer {
   text-align: center;
   color: #2c3e50;
   font-family: "Julee", cursive;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 5vw);
-  grid-gap: 15px;
+a {
+  text-decoration: none;
+  color: #2c3e50;
 }
 
-img {
+h2 {
+  margin-bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: baseline;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.gallery img {
+  margin: 5px;
   border: 2px solid #95a5a6;
   border-radius: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  /* max-width: 23vw; */
 }
 
 /********** Container Styles **********/
 
 #container {
   height: 100vh;
-  grid-template-rows: 100px 1fr 50px;
+  grid-template-rows: 50px 1fr 50px;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
@@ -87,16 +102,22 @@ footer {
 
 /********** Index.html Styles **********/
 
-.home-img_1 {
-  grid-column: 2 / 4;
-  grid-row: 1 / 4;
+.home-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.home-img_2 {
-  grid-column: 4 / 6;
-  grid-row: 1 / 4;
+.home-gallery img {
+  border: 2px solid #95a5a6;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 figcaption {
   font-size: 1.6em;
 }
+
+/********** skateboards.html Styles **********/
+
+/********** bicycles.html Styles **********/
