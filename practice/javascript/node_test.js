@@ -111,3 +111,21 @@ Therefore, if both exists, you work in order - from left to right.
 
 var someValue = 10 - (36 / 6) * 3;
 console.log(someValue);
+
+// Conditional statements: if, else, else if
+
+/*
+== both sides are equal
+=== strict equality (strictly equal with no type conversion) (equal value and equal type)
+>= left side is equal or larger
+<= right side is equal or larger
+> left side is larger
+< right side is larger
+!= not equal to
+! flip boolean
+*/
+
+// if statement:
+if (typeof "abc" == "string") {
+  console.log("this is true");
+}
