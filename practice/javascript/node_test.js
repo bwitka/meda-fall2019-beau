@@ -25,6 +25,8 @@ console.log("Very fine, thank you!");
 10000;
 
 // Boolean:
+// note: booleans are important because computers operate based on binary => i.e. ON/OFF, TRUE/FALSE, 1/0
+// 1 (ON or TRUE) vs. 0 (OFF or FALSE)
 true;
 false;
 
