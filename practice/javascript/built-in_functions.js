@@ -1,3 +1,5 @@
+/***********  BUILT-IN NUMBER FUNCTIONS IN JAVASCRIPT  ***********/
+
 /* The Math.round() function returns the value of a number rounded to the nearest integer.
     Note:
     If the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. If it is less than 0.5, the argument is rounded to the integer with the lower absolute value.  If the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞.
@@ -23,7 +25,7 @@ console.log(Math.pow(10, 3));
 // Math.sqrt() function returns the square root of a number.
 console.log(Math.sqrt(100));
 
-/***********  GENERATING A RANDOM NUMBER IN JAVASCRIPT  ***********/
+// Generating a random number in JavaScript:
 
 /* 
 The Math.random() function is used to return a floating-point pseudo-random number between range [0,1) , 0 (inclusive) and 1 (exclusive).
@@ -36,3 +38,37 @@ The Math.random() function is used to return a floating-point pseudo-random numb
 
 let randomNumber = Math.floor(Math.random() * 11); // will generate random number between 1 & 10 (inclusive)
 console.log(randomNumber);
+
+/***********  BUILT-IN STRING FUNCTIONS IN JAVASCRIPT  ***********/
+
+/* 
+The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
+*/
+console.log(parseInt("1000"));
+
+/* 
+The parseFloat() function parses an argument (converting it to a string first if needed) and returns a floating point number (a floating-point number is a number that has a decimal place. They are used when more precision is needed).
+*/
+console.log(parseFloat("10.890"));
+
+// The charAt() method returns the character at the specified index in a string.
+// Note: We start counting index numbers at zero! (i.e the index of the first character is zero)
+console.log("Hello, World!".charAt(5));
+
+/*
+The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+*/
+
+let myFavoriteFruits = [
+  "papaya",
+  "mango",
+  "kiwi",
+  "apple",
+  "grape",
+  "orange",
+  "mandarin",
+  "nectarine"
+];
+
+console.log(myFavoriteFruits.indexOf("kiwi"));
+console.log(myFavoriteFruits.indexOf("pear")); // will return -1 since "pear" is not present in array.
