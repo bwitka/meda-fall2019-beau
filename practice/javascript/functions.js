@@ -19,11 +19,28 @@ function name(parameters){
 // myFunction();
 
 function doSomeMath(a, b) {
-  console.log(`${a} plus ${b} is ${a + b}!`);
-  console.log(`${a} minus ${b} is ${a - b}!`);
-  console.log(`${a} times ${b} is ${a * b}!`);
-  console.log(`${a} divided by ${b} is ${(a / b).toFixed(1)}!`);
+  let sum = a + b;
+  let sumSentence = `${a} plus ${b} is ${sum}!`;
+  console.log(`${sumSentence}`);
+
+  let difference = a - b;
+  let differenceSentence = `${a} minus ${b} is ${difference}!`;
+  console.log(`${differenceSentence}`);
+
+  let product = a * b;
+  let productSentence = `${a} times ${b} is ${product}!`;
+  console.log(`${productSentence}`);
+
+  let quotient = a / b;
+  let quotientSentence = `${a} divided by ${b} is ${quotient.toFixed(1)}!`;
+  console.log(`${quotientSentence}`);
 }
 
 // calling / invoking the function:
+console.log("=========================");
 doSomeMath(12, 9);
+console.log("=========================");
+doSomeMath(139, 40);
+console.log("=========================");
+doSomeMath(3, 80);
+console.log("=========================");
