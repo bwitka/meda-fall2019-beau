@@ -72,3 +72,14 @@ let myFavoriteFruits = [
 
 console.log(myFavoriteFruits.indexOf("kiwi"));
 console.log(myFavoriteFruits.indexOf("pear")); // will return -1 since "pear" is not present in array.
+
+/***********  METHODS  ***********/
+// A method is a function that belongs to an object.
+// Object.method();
+
+/***********  PROPERTIES  ***********/
+// A property is a value stored in an object.
+// Object.property
+
+"This is a string".length;
+Math.PI;
