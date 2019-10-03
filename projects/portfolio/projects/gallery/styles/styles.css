@@ -1,0 +1,123 @@
+/* Hex Color Pallete:
+  #2c3e50
+  #95a5a6
+  #bdc3c7
+  #ecf0f1
+*/
+
+/* Google Fonts:
+  font-family: 'Julee', cursive;
+  font-family: 'Open Sans', sans-serif;
+*/
+
+/********** Global Styles **********/
+
+@import url("https://fonts.googleapis.com/css?family=Julee|Open+Sans&display=swap");
+
+body {
+  background-image: url(../images/background-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#container,
+header,
+main,
+footer {
+  display: grid;
+}
+
+header,
+main,
+figcaption,
+footer {
+  text-align: center;
+  color: #2c3e50;
+  font-family: "Julee", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: baseline;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+.gallery img {
+  margin: 5px;
+  border: 2px solid #95a5a6;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  /* max-width: 23vw; */
+}
+
+/********** Container Styles **********/
+
+#container {
+  height: 100vh;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/********** Header Styles **********/
+
+header {
+  grid-area: header;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/********** Main Styles **********/
+
+main {
+  grid-area: main;
+}
+
+/********** Footer Styles **********/
+
+footer {
+  grid-area: footer;
+}
+
+/********** Index.html Styles **********/
+
+.home-gallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home-gallery img {
+  border: 2px solid #95a5a6;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  font-size: 1.6em;
+}
+
+/********** skateboards.html Styles **********/
+
+/********** bicycles.html Styles **********/
