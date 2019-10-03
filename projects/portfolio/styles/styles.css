@@ -71,6 +71,11 @@ h1 {
   margin: 10px 0;
 }
 
+h2 {
+  font: bold 28px "Georgia", sans-serif;
+  color: #595959;
+}
+
 ul {
   list-style-type: none;
   text-align: center;
@@ -136,10 +141,6 @@ a:hover {
   margin: 0 100px 0;
 }
 
-#about_me h2 {
-  color: #595959;
-}
-
 #about_me img {
   border: 2px solid #595959;
   float: left;
@@ -176,6 +177,31 @@ a:hover {
 
 /***** PROJECTS PAGE STYLES *****/
 
+#project-page h2 {
+  margin: 60px 0;
+  text-align: center;
+  color: #595959;
+}
+
+#project-image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-image img {
+  border: 2px solid #595959;
+  /* border-radius: 5px; */
+  box-shadow: 3px 3px 8px 0px #000;
+}
+
+.project-image figcaption {
+  text-align: center;
+  color: #ccc;
+  font: 16px "Georgia", sans-serif;
+}
+
 /***** CONTACT PAGE STYLES *****/
 
 /* Note: form html and css borrowed from: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form */
@@ -183,7 +209,6 @@ a:hover {
 #contact_me h2 {
   margin: 60px 0;
   text-align: center;
-  color: #595959;
 }
 
 #contact_me form {
@@ -261,9 +286,9 @@ textarea:focus {
 #contact_me #email_contact a {
   text-align: center;
   margin-top: 300px;
-  color: #000;
+  color: #e6e6e6;
 }
 
 #contact_me #email_contact a:hover {
-  color: #fff;
+  color: #000;
 }
