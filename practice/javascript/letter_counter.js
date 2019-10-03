@@ -28,11 +28,9 @@ do {
   // Console log the current value of character.
   // console.log(character);
 
-  // Compare value of character to value of characterToCheck:
-  //   if (character == characterToCheck) {
-  //     console.log(`We found a match for ${characterToCheck}!`);
-  //     count += 1;
-  //   }
+  if (character == characterToCheck) {
+    count += 1;
+  }
 
   // Test to see if the loop is longer than the length of string, and stop the loop if it is.
   if (i >= lengthOfString) {
