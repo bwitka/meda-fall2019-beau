@@ -25,9 +25,23 @@ let daysOfTheWeek = [
 // Push an element into middle of array:
 // daysOfTheWeek.splice(4, 0, "Middleday");
 
-const day = daysOfTheWeek.pop();
-daysOfTheWeek.unshift(day);
+// move last element to beginning of array by storing its contents in a variable.
+// const day = daysOfTheWeek.pop();
+// daysOfTheWeek.unshift(day);
+// // one line version => daysOfTheWeek.unshift(daysOfTheWeek.pop());
 
-// one line version = daysOfTheWeek.unshift(daysOfTheWeek.pop());
+/*
+Slice() and Splice() methods:
+The slice() method returns the selected elements in an array, as a new array object.
+The splice() method adds/removes items to/from an array, and returns the removed item(s).
+Note: Slice() will not alter original array, however Splice() will change the original array.
+*/
+// daysOfTheWeek.splice(4, 2);
 
 console.log(daysOfTheWeek);
+
+// Iterating through an array with a FOR loop:
+
+for (let i = 0; i < daysOfTheWeek.length; i++) {
+  console.log(`Today is ${daysOfTheWeek[i]}.`);
+}
