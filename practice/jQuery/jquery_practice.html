@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>jQuery Practice</title>
+    <style>
+      body {
+        background: #f2f2f2;
+        color: #66c2ff;
+        text-align: center;
+      }
+
+      h1 {
+        border-bottom: 2px solid #66c2ff;
+      }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+  </head>
+
+  <body>
+    <h1>jQuery Practice</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+      animi, itaque temporibus, at, fuga explicabo aut non quasi ullam ducimus
+      mollitia dolores aspernatur? Eligendi dolore tempora eveniet error, eos
+      earum?
+    </p>
+    <script>
+      //   /***** ADD AND REMOVE HTML (start) *****/
+
+      $(document).ready(function() {
+        //     //   .html() changes (replaces) the html contents of the selected elements.
+        //     $("body").html("<h1>Hello, World!</h1>");
+        //     $("body").html("<p>This is a paragraph.</p>");
+
+        //     // .append() adds to the end of the html contents of the selected elements.
+        //     $("body").append(
+        //       "<p>This should come after the main paragraph element.</p>"
+        //     );
+
+        //     // .prepend() adds to the beginning of the html contents of the selected elements.
+        //     $("body").prepend(
+        //       "<p>This should come before all of the other html code.</p>"
+        //     );
+
+        //     // .remove() removes the selected element(s).
+        //     $("p").remove();
+
+        //   /***** ADD AND REMOVE HTML (end) *****/
+
+        /***** DOM MANIPULATION WITH CSS (start) *****/
+        $("body").css("background", "#e6ccff");
+
+        //   .css() lets you modify the css of the selected element.
+        // syntax = .css( propertyName, value );
+        $("h1")
+          .css("font-size", "72px")
+          .css("color", "#ff00ff");
+
+        // Set multiple CSS style together using an object literal.
+        $("p").css({
+          color: "#000",
+          "background-color": "#ff99ff",
+          "font-family": "'Arial', 'Helvetica', 'sans-serif'",
+          border: "1px solid #000",
+          "font-weight": "700",
+          "text-align": "center",
+          padding: "40px"
+        });
+
+        /***** DOM MANIPULATION WITH CSS (end) *****/
+
+        /***** CODING CHALLENGE (start) *****/
+
+        //   Create a div at end of webpage for testing purposes:
+        $("body").append('<div id="sampleDiv"></div>');
+
+        //   style the div:
+        $("#sampleDiv").css({
+          width: "400px",
+          height: "400px",
+          background: "#6cf",
+          "border-radius": "10px",
+          border: "2px solid #b3b3b3",
+          margin: "0 auto 40px"
+        });
+
+        //   Create 3 divs inside of above div:
+        $("#sampleDiv").append(`
+      <div class='innerDiv'></div>
+      <div class='innerDiv'></div>
+      <div class='innerDiv'></div>`);
+
+        //   style the 3 inner divs:
+        $(".innerDiv").css({
+          width: "100px",
+          height: "100px",
+          background: "#3cc",
+          "border-radius": "5px",
+          border: "2px solid #808080",
+          margin: "22px auto 22px"
+        });
+
+        /***** CODING CHALLENGE (end) *****/
+
+        /***** BUTTON EVENTS (start) *****/
+        $("body").prepend('<button id="createText">Click Here</button>');
+
+        //   Apply a click listener to the button:
+        $("#createText").click(function() {
+          $("body").prepend("<p>I was clicked!</p>");
+        });
+
+        /***** BUTTON EVENTS (end) *****/
+      }); // end of .ready() function.
+    </script>
+  </body>
+</html>
