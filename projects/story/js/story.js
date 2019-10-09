@@ -44,6 +44,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery2'>Click here to see what happens next!</button>"
         );
+
+        $("html").css({
+          background: "url(images/gamble.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
 
       $("#continue").click(function() {
@@ -57,6 +63,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery2'>Click here to see what happens next!</button>"
         );
+
+        $("html").css({
+          background: "url(images/grand-canyon.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
     });
     $("#newYorkCity").click(function() {
@@ -81,6 +93,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery1'>Click here to see what neighborhood you're going to!</button>"
         );
+
+        $("html").css({
+          background: "url(images/manhattan.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
 
       $("#brooklyn").click(function() {
@@ -94,6 +112,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery2'>Click here to see what neighborhood you're going to!</button>"
         );
+
+        $("html").css({
+          background: "url(images/brooklyn.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
     });
   });
@@ -131,6 +155,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery3'>Click here to see what happens next!</button>"
         );
+
+        $("html").css({
+          background: "url(images/cancun.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
 
       $("#direct").click(function() {
@@ -144,6 +174,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery3'>Click here to see what happens next!</button>"
         );
+
+        $("html").css({
+          background: "url(images/cuba.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
     });
     $("#spain").click(function() {
@@ -168,6 +204,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery4'>Click here to see where you're headed next...</button>"
         );
+
+        $("html").css({
+          background: "url(images/barcelona.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
 
       $("#bilbao").click(function() {
@@ -181,6 +223,12 @@ $(document).ready(function() {
         $("#choices").append(
           "<button id='mystery4'>Click here to see where you're headed next...</button>"
         );
+
+        $("html").css({
+          background: "url(images/bilbao.jpg)",
+          "background-size": "cover",
+          "background-position": "center"
+        });
       });
     });
   });

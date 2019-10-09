@@ -6,9 +6,49 @@ font-family: 'Roboto Slab', serif;
 */
 
 /***** GLOBAL STYLES *****/
+html {
+  background: url(../images/story_bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+}
+
+/***** HEADING STYLES *****/
+h1 {
+  font-family: "Lakki Reddy", cursive;
+  font-size: 6em;
+  text-shadow: 1px 3px 0 #969696, 1px 13px 5px #666;
+}
 
 /***** STORY STYLES *****/
-
+#story {
+  border-radius: 5px;
+  /* position: absolute; */
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  margin: 0 0 100px;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25em;
+  color: #fff;
+}
 /***** BUTTON STYLES *****/
+button {
+  font-family: "Roboto Slab", serif;
+  font-size: 1em;
+  margin: 0 40px 0;
+  background: rgba(230, 230, 230, 0.9);
+  padding: 16px 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
 
 /***** IMAGE STYLES *****/
