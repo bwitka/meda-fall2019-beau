@@ -111,6 +111,25 @@
         //   Apply a click listener to the button:
         $("#createText").click(function() {
           $("body").prepend("<p>I was clicked!</p>");
+          $("div").remove();
+          $("body").css("background-color", "pink");
+          $("h1").css("color", "coral");
+
+          $("body").append(
+            "<button id='removeOtherButton'>Remove Other Button!</button>"
+          );
+
+          $("#removeOtherButton").click(function() {
+            $("#createText").remove();
+
+            console.log($("#createText"));
+
+            if ($("#createText").length == 0) {
+              console.log("Button no longer exists!");
+            } else {
+              console.log("Button still exists!");
+            }
+          });
         });
 
         /***** BUTTON EVENTS (end) *****/
