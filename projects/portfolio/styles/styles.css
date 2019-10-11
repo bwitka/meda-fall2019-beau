@@ -73,7 +73,7 @@ h1 {
 
 h2 {
   font: bold 28px "Georgia", sans-serif;
-  color: #595959;
+  color: #404040;
 }
 
 ul {
@@ -138,7 +138,7 @@ a:hover {
 /***** ABOUT PAGE STYLES *****/
 
 #about_me {
-  margin: 0 100px 0;
+  margin: 50px 100px 0;
 }
 
 #about_me img {
@@ -180,7 +180,7 @@ a:hover {
 #project-page h2 {
   margin: 60px 0;
   text-align: center;
-  color: #595959;
+  color: #404040;
 }
 
 #project-image-gallery {
@@ -272,14 +272,8 @@ textarea:focus {
   resize: vertical;
 }
 
-#contact_me.button {
-  /* To position the buttons to the same position of the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-#contact_me button {
-  /* This extra margin represents the same space as the space between the labels and their text fields */
-  margin-left: 0.5em;
+#contact_me .button {
+  text-align: center;
 }
 
 #contact_me #email_contact p,
