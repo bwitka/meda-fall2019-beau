@@ -1,5 +1,65 @@
 // We have two divs on our HTML page, one is #story and the other is #choices.
 
+/***** RANDOM ANSWER CODE (start) *****/
+
+const mystery1 = [
+  "Sorry, you lose all your money and have to sell your car to buy a plane ticket home.",
+  "Wow, you win $1,000,000,000 and decide to buy a casino in Las Vegas."
+];
+
+let randomAnswer1 = mystery1[Math.floor(Math.random() * mystery1.length)];
+
+const mystery2 = [
+  "Unfortunately your car breaks down and you never make it to the Grand Canyon.",
+  "You continue on without any issues and spent ten days camping in the Grand Canyon."
+];
+
+let randomAnswer2 = mystery2[Math.floor(Math.random() * mystery2.length)];
+
+const mystery3 = [
+  "You're staying in Chelsea!",
+  "You're staying in the East Village!"
+];
+
+let randomAnswer3 = mystery3[Math.floor(Math.random() * mystery3.length)];
+
+const mystery4 = [
+  "You're staying in Williamsburg, the hippest neighborhood in Brooklyn!",
+  "You're staying in DUMBO, with a beautiful view of New York harbor."
+];
+
+let randomAnswer4 = mystery4[Math.floor(Math.random() * mystery4.length)];
+
+const mystery5 = [
+  "Cubana de Aviación no longer offers flights from Cancún to Cuba, so you'll have to come up with an alternate plan.",
+  "You buy a ticket and fly to Cuba that same day."
+];
+
+let randomAnswer5 = mystery5[Math.floor(Math.random() * mystery5.length)];
+
+const mystery6 = [
+  "You're flying to Havana!",
+  "You're flying straight to the beach resort of Varadero!"
+];
+
+let randomAnswer6 = mystery6[Math.floor(Math.random() * mystery6.length)];
+
+const mystery7 = [
+  "You decide to stay in the city of Barcelona.",
+  "You head up the coast to the small city of Sitges."
+];
+
+let randomAnswer7 = mystery7[Math.floor(Math.random() * mystery7.length)];
+
+const mystery8 = [
+  "You stay in the city.",
+  "You decide to walk the Camino de Santiago."
+];
+
+let randomAnswer8 = mystery8[Math.floor(Math.random() * mystery8.length)];
+
+/***** RANDOM ANSWER CODE (end) *****/
+
 $(document).ready(function() {
   $("#story").append(
     "<p>Your boss just awarded you two weeks of paid vacation time. Now all you need to do is decide where to go!</p>"
@@ -42,13 +102,17 @@ $(document).ready(function() {
         $("#continue").remove();
 
         $("#choices").append(
-          "<button id='mystery2'>Click here to see what happens next!</button>"
+          "<button id='mystery1'>Click here to see what happens next!</button>"
         );
 
+        $("#mystery1").click(function() {
+          $("#story").html(randomAnswer1);
+
+          $("#mystery1").remove();
+        });
+
         $("html").css({
-          background: "url(images/gamble.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/gamble.jpg) no-repeat center center fixed"
         });
       });
 
@@ -64,10 +128,15 @@ $(document).ready(function() {
           "<button id='mystery2'>Click here to see what happens next!</button>"
         );
 
+        $("#mystery2").click(function() {
+          $("#story").html(randomAnswer2);
+
+          $("#mystery2").remove();
+        });
+
         $("html").css({
-          background: "url(images/grand-canyon.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background:
+            "url(images/grand-canyon.jpg) no-repeat center center fixed"
         });
       });
     });
@@ -91,13 +160,17 @@ $(document).ready(function() {
         $("#brooklyn").remove();
 
         $("#choices").append(
-          "<button id='mystery1'>Click here to see what neighborhood you're going to!</button>"
+          "<button id='mystery3'>Click here to see what neighborhood you're going to!</button>"
         );
 
+        $("#mystery3").click(function() {
+          $("#story").html(randomAnswer3);
+
+          $("#mystery3").remove();
+        });
+
         $("html").css({
-          background: "url(images/manhattan.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/manhattan.jpg) no-repeat center center fixed"
         });
       });
 
@@ -110,13 +183,17 @@ $(document).ready(function() {
         $("#brooklyn").remove();
 
         $("#choices").append(
-          "<button id='mystery2'>Click here to see what neighborhood you're going to!</button>"
+          "<button id='mystery4'>Click here to see what neighborhood you're going to!</button>"
         );
 
+        $("#mystery4").click(function() {
+          $("#story").html(randomAnswer4);
+
+          $("#mystery4").remove();
+        });
+
         $("html").css({
-          background: "url(images/brooklyn.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/brooklyn.jpg) no-repeat center center fixed"
         });
       });
     });
@@ -153,13 +230,17 @@ $(document).ready(function() {
         $("#direct").remove();
 
         $("#choices").append(
-          "<button id='mystery3'>Click here to see what happens next!</button>"
+          "<button id='mystery5'>Click here to see what happens next!</button>"
         );
 
+        $("#mystery5").click(function() {
+          $("#story").html(randomAnswer5);
+
+          $("#mystery5").remove();
+        });
+
         $("html").css({
-          background: "url(images/cancun.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/cancun.jpg) no-repeat center center fixed"
         });
       });
 
@@ -172,13 +253,17 @@ $(document).ready(function() {
         $("#direct").remove();
 
         $("#choices").append(
-          "<button id='mystery3'>Click here to see what happens next!</button>"
+          "<button id='mystery6'>Click here to see what happens next!</button>"
         );
 
+        $("#mystery6").click(function() {
+          $("#story").html(randomAnswer6);
+
+          $("#mystery6").remove();
+        });
+
         $("html").css({
-          background: "url(images/cuba.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/cuba.jpg) no-repeat center center fixed"
         });
       });
     });
@@ -202,13 +287,17 @@ $(document).ready(function() {
         $("#bilbao").remove();
 
         $("#choices").append(
-          "<button id='mystery4'>Click here to see where you're headed next...</button>"
+          "<button id='mystery7'>Click here to see where you're headed next...</button>"
         );
 
+        $("#mystery7").click(function() {
+          $("#story").html(randomAnswer7);
+
+          $("#mystery7").remove();
+        });
+
         $("html").css({
-          background: "url(images/barcelona.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/barcelona.jpg) no-repeat center center fixed"
         });
       });
 
@@ -221,13 +310,17 @@ $(document).ready(function() {
         $("#bilbao").remove();
 
         $("#choices").append(
-          "<button id='mystery4'>Click here to see where you're headed next...</button>"
+          "<button id='mystery8'>Click here to see where you're headed next...</button>"
         );
 
+        $("#mystery8").click(function() {
+          $("#story").html(randomAnswer8);
+
+          $("#mystery8").remove();
+        });
+
         $("html").css({
-          background: "url(images/bilbao.jpg)",
-          "background-size": "cover",
-          "background-position": "center"
+          background: "url(images/bilbao.jpg) no-repeat center center fixed"
         });
       });
     });
