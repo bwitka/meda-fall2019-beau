@@ -1,0 +1,125 @@
+<!-- NOTE: (12/6/19) code was working (outputting password hash), then I copied and pasted in Eduardo's code. Now output is an empty array. -->
+
+<!-- website link for front end design:
+https://colorlib.com/wp/template/creative-login-form/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tierras Altas Adventures | Welcome</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="images/site_favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css"
+      integrity="sha256-PtBWX+v2TI0iuYI3rZrQft5kfd3ZkdPd8iVMZoE1rxE="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.min.js"
+      integrity="sha256-hV6Ff1ZbnLObO8BWHPZs1oA3aPZkX4bnnEKO4nX1sm0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.min.js"
+      integrity="sha256-pMgPw2sArXEcjAzvhVgWZ4iS4Jm3NKrLG0mFWdrUwCE="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="login-page">
+      <header>
+        <nav>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <div id="logo">
+            <img
+              id="website-logo"
+              src="images/website_logo-2.png"
+              alt="website logo"
+            />
+          </div>
+          <a href="">Excursions</a>
+          <a href="">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <div class="form">
+          <!--LOGIN FORM-->
+          <form id="login">
+            <h2 class="form-title">User Login</h2>
+            <p id="login-message"></p>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="username"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+            />
+            <button id="submitLogin">Login</button>
+          </form>
+        </div>
+        <!--REGISTRATION FORM-->
+        <div class="form">
+          <form id="register">
+            <h2 class="form-title">New User Registration</h2>
+            <p id="register-message"></p>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="first name"
+            />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="last name"
+            />
+            <input
+              type="text"
+              id="username-register"
+              name="username"
+              placeholder="username"
+            />
+            <input type="email" id="email" name="email" placeholder="email" />
+            <input
+              type="password"
+              id="password-register"
+              name="password"
+              placeholder="password"
+            />
+            <button id="submitRegister">Register</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <p id="copyright">
+          &copy;2019 Tierras Altas Adventures Inc. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
