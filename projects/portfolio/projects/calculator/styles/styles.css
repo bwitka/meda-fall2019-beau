@@ -1,0 +1,48 @@
+body {
+    background-color: #777;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Marker Felt", "fantasy";
+}
+
+label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 36px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+#output {
+    border: double 2px #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#output h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 4px;
+}
